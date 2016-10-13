@@ -3,9 +3,9 @@
 \usepackage{amsmath}
 \usepackage{caption}
 
+
 % Make table names in captions boldfaced
 \captionsetup[table]{labelfont=bf}
-%opening
 
 \begin{document}
 	
@@ -36,15 +36,15 @@
 			
 			\centering
 			
-			\begin{tabular}{|c|c|c|c|c|}
+			\begin{tabular}{c c c c c}
 				\hline
 				Trial ID & \begin{tabular}[c]{@{}c@{}}CW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CW Speed \\ (rev/s) ($\pm5$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Speed \\ (rev/s) ($\pm5$)\end{tabular} \\ \hline
 				11       & 10.17                                                          & 1503                                                        & 9.27                                                            & -1460                                                        \\
 				12       & 10.19                                                          & 1505                                                        & 9.27                                                            & -1464                                                        \\
-				13       & 10.18                                                          & 1510                                                        & 9.28                                                            & -1461                                                        \\
+				13       & 10.18                                                          & 1510                                                        & 9.28                                                            & -1461                                                        \\ \hline
 				21       & 10.16                                                          & 1506                                                        & 9.28                                                            & -1462                                                        \\
 				22       & 10.18                                                          & 1503                                                        & 9.33                                                            & -1463                                                        \\
-				23       & 10.22                                                          & 1507                                                        & 9.36                                                            & -1460                                                        \\
+				23       & 10.22                                                          & 1507                                                        & 9.36                                                            & -1460                                                        \\ \hline
 				31       & 12.00                                                          & 1508                                                        & 11.12                                                           & -1465                                                        \\
 				32       & 12.00                                                          & 1505                                                        & 11.08                                                           & -1456                                                        \\
 				33       & 12.00                                                          & 1507                                                        & 11.12                                                           & -1468                                                        \\
@@ -54,40 +54,7 @@
 			\label{tab:rawmeasure}
 		\end{table*}
 		
-		% deflection data
-		\begin{table*}[t]
-			\centering
-			\begin{tabular}{|c|c|c|}
-				\hline
-				Trial ID & \begin{tabular}[c]{@{}c@{}}Deflection \\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Deflection\\ (m)\end{tabular} \\ \hline
-				11       & 0.9                                                        & 9.00E-04                                                 \\
-				12       & 0.92                                                       & 9.20E-04                                                 \\
-				13       & 0.9                                                        & 9.00E-04                                                 \\
-				21       & 0.88                                                       & 8.80E-04                                                 \\
-				22       & 0.85                                                       & 8.50E-04                                                 \\
-				23       & 0.86                                                       & 8.60E-04                                                 \\
-				31       & 0.88                                                       & 8.80E-04                                                 \\
-				32       & 0.92                                                       & 9.20E-04                                                 \\
-				33       & 0.88                                                       & 8.80E-04                                                 \\
-				34       & 0.98                                                       & 9.80E-04 \\ \hline                                               
-			\end{tabular}%
-			\caption{\textbf{Deflection measurements of the laser between the maximum rotation speeds in the clockwise and counterclockwise directions, in mm and m.}}
-			\label{tab:deflection}
-		\end{table*}
 		
-		% mean measurements data
-		\begin{table*}[t]
-			\centering
-			\begin{tabular}{|c|c|c|c|c|}
-				\hline
-				& \begin{tabular}[c]{@{}c@{}}Measurement Mean, CW\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Measurement Mean, CCW\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Mean Deflection\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Mean Deflection\\ (m)\end{tabular} \\ \hline
-				Set 1 & 10.18                                                               & 9.27                                                                 & 0.91                                                           & 9.07E-04                                                      \\
-				Set 2 & 10.18                                                               & 9.32                                                                 & 0.86                                                           & 8.63E-04                                                      \\
-				Set 3 & 12.02                                                               & 11.11                                                                & 0.92                                                           & 9.15E-04                                              \\ \hline       
-			\end{tabular}
-			\caption{\textbf{Mean measurements for each set of data averaged with respect to mirror rotation speed and direction.}}
-			\label{tab:meanvalues}
-		\end{table*}
 		
 	Three sets of data were taken spread across three measurement sessions on different dates. 
 	The first two measurement sessions used the same experimental setup on different days. 
@@ -103,11 +70,47 @@
 	For the first two sessions, data was only taken for the +/-1500 rev/s rotating mirror speeds. 
 	In the third set, additional measurements were made at mirror speeds +/-1000 rev/s in order to characterize backlash in the micrometer knob.
 	
+	Other values necessary for the calculation of the speed of light included the distance A between $L_1$ and $L_2$, the distance $B$ between $L_2$ and the rotating mirror, and the baseline distance $D$ between the rotating mirror and the fixed mirror. Measurements of each of these distances were taken for each set and are reported in Table \ref{tab:distances}.
+		
+	% distance measurement data
+	\begin{table}[]
+		\centering
+		\begin{tabular}{c c c c }
+			\hline
+			& \begin{tabular}[c]{@{}c@{}}A(m)\\ (+/-0.005m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}B(m)\\ (+/-0.005m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}D (m)\\ (+/-0.01m)\end{tabular} \\ \hline
+			Set 1 & 0.26                                                       & 0.481                                                      & 6.65                                                       \\
+			Set 2 & 0.26                                                       & 0.481                                                      & 6.65                                                       \\
+			Set 3 & 0.326                                                      & 0.45                                                       & 6.63      \\ \hline                                                
+		\end{tabular}
+		\caption{\textbf{Measurements of the lengths $A$, $B$, and $D$.}}
+		\label{tab:distances}
+	\end{table}	
 	
 	
 	\subsection{Calculations}
 	The equation for calculating the speed of light is dependent on the deflection difference between measurements at the maximum rotation speeds clockwise and counter-clockwise. 
 	Table \ref{tab:deflection} shows the deflections for each measurement in mm.
+	
+	% deflection data
+	\begin{table}[]
+		\centering
+		\begin{tabular}{c c}
+			\hline
+			Trial ID & \begin{tabular}[c]{@{}c@{}}Deflection \\ (mm)\end{tabular}  \\ \hline
+			11       & 0.90       \\
+			12       & 0.92       \\
+			13       & 0.90       \\
+			21       & 0.88       \\
+			22       & 0.85       \\
+			23       & 0.86       \\
+			31       & 0.88       \\
+			32       & 0.92       \\
+			33       & 0.88       \\
+			34       & 0.98       \\ \hline                                               
+		\end{tabular}%
+		\caption{\textbf{Deflection measurements of the laser between the maximum rotation speeds in the clockwise and counterclockwise directions, in mm and m.}}
+		\label{tab:deflection}
+	\end{table}
 	
 	Comparing the measurements in sets 1 and 2 to those in set 3, we can see that the absolute value of these measurements are different, yet the relative deflections are still roughly the same. 
 	This indicates that our experimental setup was consistent and did not affect the outcome of the measurements. 
@@ -117,8 +120,64 @@
 	The average measurement values for each set are shown in table \ref{tab:meanvalues}. 
 	The mean deflection for each set was calculated from the difference of the mean measurements at +1500 rev/s and -1500 rev/s.
 	
+	% mean measurements data
+	\begin{table*}[t]
+		\centering
+		\begin{tabular}{c c c c}
+			\hline
+		    Data Set	& \begin{tabular}[c]{@{}c@{}}Measurement Mean, CW\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Measurement Mean, CCW\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Mean Deflection\\ (mm)\end{tabular} \\ \hline
+			Set 1 & 10.18                                                               & 9.27                                                                 & 0.91                  \\
+			Set 2 & 10.18                                                               & 9.32                                                                 & 0.86                                                   \\
+			Set 3 & 12.02                                                               & 11.11                                                                & 0.92                                        \\ \hline       
+		\end{tabular}
+		\caption{\textbf{Mean measurements for each set of data averaged with respect to mirror rotation speed and direction.}}
+		\label{tab:meanvalues}
+	\end{table*}
 	
-	\subsection{Error Analysis}
+	The rotation frequencies for each measurement were recorded as well and averaged for each set. 
+	The total rotation frequency $f_{CW}+f_{CCW}$ is just the sum of the mean rotation frequencies for each set, and is used in the calculation of the speed of light. 
+	These values are reported in table \ref{tab:averagerotf}.
+	
+	% average rotation speed data
+	\begin{table*}[t]
+		\centering
+		\begin{tabular}{c c c c}
+			\hline
+			 Data Set & \begin{tabular}[c]{@{}l@{}}Mean CW Rotation Speed \\ (Rev/s)(+/-5)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mean CCW Rotation Speed \\ (Rev/s)(+/- 5)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mean Deflection Frequency \\ (Rev/s)(+/-10)\end{tabular} \\ \hline
+			Set 1 & 1506                                                                            & -1461                                                                             & 2967                                                                               \\
+			Set 2 & 1505                                                                            & -1462                                                                             & 2967                                                                               \\
+			Set 3 & 1508                                                                            & -1464                                                                             & 2971  \\ \hline                                                                            
+		\end{tabular}
+		\caption{\textbf{Mean measurement rotation speeds for each set of data.}}
+		\label{tab:averagerotf}
+	\end{table*}
+	
+	The speed of light $c$ for each set was calculated using the mean deflections $s'_{cw}-s'_{ccw}$, the rotation speed difference $f_{cw} + f_{ccw}$, the distances $A$, $B$, and $D$, and the equation described in Methods and Procedures and restated in below as Equation \ref{eq:speedoflight_calcs}.
+	
+	\begin{equation} \label{eq:speedoflight_calcs}
+	c = \frac{ 8\pi AD^2 (f_{cw} + f_{ccw})}
+			 { (D + B) (s'_{cw} - s'_{ccw})}
+	\end{equation}
+	
+	The calculated speed of light $c$ for each set of data is shown in Table \ref{tab:cvals}.
+	
+	% speed of light
+	\begin{table}[]
+		\centering
+		\begin{tabular}{c c c c} \hline
+			Data Set  & \begin{tabular}[c]{@{}c@{}}$c$ \\ ($m/s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Random Uncertainty \\ ($\pm m/s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Systematic Uncertainty \\ ($\pm m/s$)\end{tabular} \\ \hline
+			Set 1 & $1.33*10^{8}$                                           & TODO	& TODO                                                             \\
+			Set 2 & $1.39*10^8$                                           & TODO	& TODO                                                             \\
+			Set 3 & $1.65*10^8$                                           & TODO	& TODO                       \\ \hline                                     
+		\end{tabular}
+		\caption{\textbf{Calculated values of the speed of light}}
+		\label{tab:cvals}
+	\end{table}
+	
+	\subsection{Error Analysis} \label{subsec:error}
+	Each set of data was separately analyzed for random and systematic error.
+	For each data set, the standard deviation of each of each measurement at each frequency was calculated, then added in quadrature to arrive at a standard deviation of uncertainty in the deflection value.
+	 
 	\subsection{Discussion}
 
 \section{Conclusion}
