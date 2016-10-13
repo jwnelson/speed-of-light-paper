@@ -1,0 +1,126 @@
+\documentclass[twocolumn]{article}
+
+\usepackage{amsmath}
+\usepackage{caption}
+
+% Make table names in captions boldfaced
+\captionsetup[table]{labelfont=bf}
+%opening
+
+\begin{document}
+	
+\title{Measuring the Speed of Light using the Foucault Method}
+\author{Jack Nelson, Raymond Chang, Robert Gregory}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+	\subsection{Objective}
+	\subsection{Background}
+	\subsection{Theory}
+
+\section{Methods and Procedures}
+	\subsection{Method Description}
+	\subsection{Derivation of the Speed of Light Equation}
+
+\section{Results}
+
+
+	\subsection{Data}
+		% raw deflection measurements
+		\begin{table*}[t] 
+			
+			\centering
+			
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				Trial ID & \begin{tabular}[c]{@{}c@{}}CW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CW Speed \\ (rev/s) ($\pm5$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Speed \\ (rev/s) ($\pm5$)\end{tabular} \\ \hline
+				11       & 10.17                                                          & 1503                                                        & 9.27                                                            & -1460                                                        \\
+				12       & 10.19                                                          & 1505                                                        & 9.27                                                            & -1464                                                        \\
+				13       & 10.18                                                          & 1510                                                        & 9.28                                                            & -1461                                                        \\
+				21       & 10.16                                                          & 1506                                                        & 9.28                                                            & -1462                                                        \\
+				22       & 10.18                                                          & 1503                                                        & 9.33                                                            & -1463                                                        \\
+				23       & 10.22                                                          & 1507                                                        & 9.36                                                            & -1460                                                        \\
+				31       & 12.00                                                          & 1508                                                        & 11.12                                                           & -1465                                                        \\
+				32       & 12.00                                                          & 1505                                                        & 11.08                                                           & -1456                                                        \\
+				33       & 12.00                                                          & 1507                                                        & 11.12                                                           & -1468                                                        \\
+				34       & 12.10                                                          & 1510                                                        & 11.12                                                           & -1466  \\ \hline                                                     
+			\end{tabular}
+			\caption{\textbf{Laser deflection data taken during three separate sessions. Positive rotation speeds correspond to clockwise rotation of the rotating mirror, and negative speeds correspond to counterclockwise speeds.}}
+			\label{tab:rawmeasure}
+		\end{table*}
+		
+		% deflection data
+		\begin{table*}[t]
+			\centering
+			\begin{tabular}{|c|c|c|}
+				\hline
+				Trial ID & \begin{tabular}[c]{@{}c@{}}Deflection \\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Deflection\\ (m)\end{tabular} \\ \hline
+				11       & 0.9                                                        & 9.00E-04                                                 \\
+				12       & 0.92                                                       & 9.20E-04                                                 \\
+				13       & 0.9                                                        & 9.00E-04                                                 \\
+				21       & 0.88                                                       & 8.80E-04                                                 \\
+				22       & 0.85                                                       & 8.50E-04                                                 \\
+				23       & 0.86                                                       & 8.60E-04                                                 \\
+				31       & 0.88                                                       & 8.80E-04                                                 \\
+				32       & 0.92                                                       & 9.20E-04                                                 \\
+				33       & 0.88                                                       & 8.80E-04                                                 \\
+				34       & 0.98                                                       & 9.80E-04 \\ \hline                                               
+			\end{tabular}%
+			\caption{\textbf{Deflection measurements of the laser between the maximum rotation speeds in the clockwise and counterclockwise directions, in mm and m.}}
+			\label{tab:deflection}
+		\end{table*}
+		
+		% mean measurements data
+		\begin{table*}[t]
+			\centering
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				& \begin{tabular}[c]{@{}c@{}}Measurement Mean, CW\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Measurement Mean, CCW\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Mean Deflection\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Mean Deflection\\ (m)\end{tabular} \\ \hline
+				Set 1 & 10.18                                                               & 9.27                                                                 & 0.91                                                           & 9.07E-04                                                      \\
+				Set 2 & 10.18                                                               & 9.32                                                                 & 0.86                                                           & 8.63E-04                                                      \\
+				Set 3 & 12.02                                                               & 11.11                                                                & 0.92                                                           & 9.15E-04                                              \\ \hline       
+			\end{tabular}
+			\caption{\textbf{Mean measurements for each set of data averaged with respect to mirror rotation speed and direction.}}
+			\label{tab:meanvalues}
+		\end{table*}
+		
+	Three sets of data were taken spread across three measurement sessions on different dates. 
+	The first two measurement sessions used the same experimental setup on different days. 
+	Session three occurred after the experiment was broken down and rebuilt so as to try and exonerate the experimental setup as a source of error in the measurements. 
+	As a result, the first two sets of data can be analyzed together, while the third set of data must be analyzed separately at first, since the process of rebuilding the experimental setup introduced systematic differences to the measurements made during the third session. 
+	Since the calculated speed of light value is dependent on relative measurements and not absolute measurements, this systematic difference between the first two sets of data and the third will be shown to be negligible in the overall calculation of the speed of light.
+	
+	Table \ref{tab:rawmeasure} shows the measurements taken in each of the three sessions.
+	The data is indexed by a trial ID. 
+	The session each measurement belongs to is indicated by the leading digit of the Trial ID. 
+	For example, measurement 23 is the third measurement taken during the second set of data.
+	
+	For the first two sessions, data was only taken for the +/-1500 rev/s rotating mirror speeds. 
+	In the third set, additional measurements were made at mirror speeds +/-1000 rev/s in order to characterize backlash in the micrometer knob.
+	
+	
+	
+	\subsection{Calculations}
+	The equation for calculating the speed of light is dependent on the deflection difference between measurements at the maximum rotation speeds clockwise and counter-clockwise. 
+	Table \ref{tab:deflection} shows the deflections for each measurement in mm.
+	
+	Comparing the measurements in sets 1 and 2 to those in set 3, we can see that the absolute value of these measurements are different, yet the relative deflections are still roughly the same. 
+	This indicates that our experimental setup was consistent and did not affect the outcome of the measurements. 
+	This will be further supported in the section on error analysis.
+	
+	To calculate a value for the speed of light, each set of measurements was averaged with respect to mirror rotation speed and direction. 
+	The average measurement values for each set are shown in table \ref{tab:meanvalues}. 
+	The mean deflection for each set was calculated from the difference of the mean measurements at +1500 rev/s and -1500 rev/s.
+	
+	
+	\subsection{Error Analysis}
+	\subsection{Discussion}
+
+\section{Conclusion}
+
+\end{document}
