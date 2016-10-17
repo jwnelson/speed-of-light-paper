@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{_bipm_1984}
 {\em {BIPM} - {Resolution} 1 of the 17th {CGPM}}, 1984.
@@ -15,6 +15,10 @@
 
 \bibitem{galilei_dialogues_1638}
 {\sc G.~Galilei}, {\em Dialogues {Concerning} {Two} {New} {Sciences}}, 1638.
+
+\bibitem{lee_instruction_????}
+{\sc B.~Lee}, {\em Instruction {Manual} and {Experimental} {Guide} for the
+  {PASCO} scientific {Model} {OS}-9261a, 62 and 63a}.
 
 \bibitem{michelson_experimental_1878}
 {\sc A.~A. Michelson}, {\em Experimental {Determination} of the {Velocity} of

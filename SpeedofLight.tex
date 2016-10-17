@@ -153,7 +153,114 @@
 	\label{sec:Methods}
 	\subsection{Method Description}
 	\subsection{Derivation of the Speed of Light Equation}
-
+	We start by considering a laser, a rotating mirror $M_r$, and a fixed mirror $M_f$ in the configuration shown in Figure \ref{fig:MrMfAngles}. 
+	Suppose a photon is emitted from the laser and reflected off the rotating mirror to a point $S$ located on the fixed mirror in euclidean space. 
+	If $M_r$ is at an angle $\theta$ from the plane of the incident laser beam, the incident light will be reflected onto $M_f$ at an angle of 2$\theta$ by Snell's law.
+	
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=0.49\textwidth]{Images/MrMfAngles.png}
+		\caption{\textbf{Laser beam reflected an angle $2\theta$ by $M_r$ onto $M_f$ as image $S$.\cite{lee_instruction_????} \copyright PASCO Scientific}}
+		\label{fig:MrMfAngles}
+	\end{figure}
+	Now suppose a second beam of light is emitted at a small time $\Delta t$ later. 
+	The rotating mirror will have rotated by a total angle  $\theta + \Delta \theta$.
+	Let the new image on $M_f$ be called $S_1$. 
+	$S_1$ will be at an angle $2(\theta + \Delta \theta)$ from the plane of the laser by Snell's law again, as shown in Figure \ref{fig:MrMfAngles2}. 
+	Call this quantity $\theta_1$:
+	\begin{equation}
+		\theta_1 = 2(\theta + \Delta \theta)
+	\end{equation}
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=0.49\textwidth]{Images/MrMfAngles2.png}
+		\caption{\textbf{Image $S_1$ a small time $\Delta t$ later after $M_r$ rotates by angle $\Delta\theta$.\cite{lee_instruction_????} \copyright PASCO Scientific}}
+		\label{fig:MrMfAngles2}
+	\end{figure}
+	
+	Now let D be the distance between $M_r$ and $M_f$. 
+	The distance between the original image $S$ and the second image $S_1$ formed at a small time $\Delta t$ later can be found from trigonometry. 
+	Assuming both $S$ and $S_1$ lie on The arc of a circle of radius $D$, the arc length $\Delta S = S_1-S$ would be:
+	\begin{equation*}
+		\Delta S = S_1 - S = D(2\theta_1 - 2\theta)
+	\end{equation*}
+	\begin{equation*}
+		= D[2(\theta + \Delta \theta) - 2\theta] = 2D\Delta\theta
+	\end{equation*}
+	\begin{equation}
+		\Rightarrow \Delta S = 2D\Delta\theta
+		\label{eq:DeltaS}
+	\end{equation}
+	
+	Now suppose a beam splitter and a lens $L_2$ is placed between the laser and rotating mirror. 
+	Constructing a virtual image of $M_r$, as shown in Figure \ref{fig:VirtualImage}, will allow the arc length $\Delta S$ as seen through lens $L_2$ to be computed. 
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=0.49\textwidth]{Images/VirtualImageDiagram}]
+		\caption{\textbf{$\Delta S$ projected onto the virtual image of $M_r$.\cite{lee_instruction_????} \copyright PASCO Scientific}}
+		\label{fig:VirtualImage}
+	\end{figure}
+	
+	Lenses $L_2$ will distort the arc length $\Delta S$ by $i/o$ where $i$ is the distance from $L_2$ to the image $A$, and $o$ is the distance from $l_2$ to the object at $D + B$. 
+	The length $\Delta S$ will therefore become a new contracted length we'll call  $\Delta s'$ when the light passes through lens $L_2$. 
+	With this, $\Delta s'$ is equal to:
+	\begin{equation}
+		\Delta s' = \frac{i}{o} \Delta S = \Delta S(\frac{A}{D}+B)
+		\label{eq:DeltaSPrime}
+	\end{equation}
+	
+	Additionally, from Equation (\ref{eq:DeltaS}), $\Delta S$ was found to be twice the product of the distance between mirrors D and a tiny angle $\Delta \theta$. Substituting this information from Equation (\ref{eq:DeltaS}) into Equation (\ref{eq:DeltaSPrime}) gives:
+	\begin{equation}
+		\Delta s' = 2D\Delta\theta(\frac{A}{D}+B)
+		\label{eq:DeltaSPrime2}
+	\end{equation}
+	
+	The small angle $\Delta$ is really just the rotation rate of the mirror in radians per second $omega$ divided by the speed of the laser beam. 
+	Here, it will be assumed the laser travels at the speed of light $c$. 
+	Therefore, $\Delta$ can be written in terms of the rotation rate of $M_r$:
+	\begin{equation}
+		\Delta\theta = 2D\frac{w}{c}
+		\label{eq:DeltaTheta}
+	\end{equation}
+	
+	By substituting Equation (\ref{eq:DeltaTheta}) into Equation (\ref{eq:DeltaSPrime2}), the reflected image height can be rewritten as:
+	\begin{equation}
+		\Delta s' = \frac{4A\omega D^2}{c(D+B)}
+		\label{eq:DeltaSPrime3}
+	\end{equation}
+	
+	Equation (\ref{eq:DeltaSPrime3}) can be solved for c by taking the reciprocal, yielding the result:
+	\begin{equation}
+		c = \frac{4A\omega D^2}{\Delta s'(D+B)}
+		\label{eq:SpeedOfLightRadians}
+	\end{equation}
+	
+	Equation (\ref{eq:SpeedOfLightRadians}) relates the small arc length $\Delta S$, shrunk to a shorter length called $\Delta s'$ by a lens $L_2$, to the speed of light. 
+	Even though this derivation assumed two light pulses at a small time $\Delta t$ from one another, the result is valid for a continuous beam of light as long as the rotation rate of $M_r$ is constant. 
+	
+	Equation (\ref{eq:SpeedOfLightRadians}) predicts that as the angular velocity $\omega$ of $M_r$ is increased, the displacement $\Delta s'$ will also increase. 
+	Conversely, as $\omega$ decreases, the displacement as viewed from the lens $L_2$ will decrease converging to zero displacement and a still image when the rotating mirror is stationary. 
+	
+	To adjust Equation (\ref{eq:SpeedOfLightRadians}) to use angular velocity units of Hertz rather than radians per second, we simply multiply the equation by a conversion factor of $2\pi$.
+	Furthermore, we can break down Equation (\ref{eq:SpeedOfLightRadians}) into the components we'll be directly measuring.
+	Since we measure the total deflection of the laser beam from the maximum clockwise deflection to the maximum counterclockwise deflection, the total displacement $\Delta s'$ is given by:
+	\begin{equation}
+		\Delta s' = s'_{cw} - s'_{ccw}
+	\end{equation} 
+	The angular frequency $f$ we directly measure is then the difference between the angular frequency at $s'_{cw}$ and $s'_{ccw}$:
+	\begin{equation}
+		f = f_{cw} - f_{ccw}
+	\end{equation}
+	This notation assumes the convention that a clockwise rotation is positive, and a counterclockwise rotation is negative.
+	
+	Our final equation for the experimental speed of light value is then:
+	\begin{equation} \label{eq:SpeedofLightCalc1}
+	c = \frac{ 8\pi AD^2 (f_{cw} + f_{ccw})}
+	{ (D + B) (s'_{cw} - s'_{ccw})}
+	\end{equation}
+	
+	The deflections $s'_{cw}$ and $s'_{ccw}$, and the angular frequencies $f_{cw}$ and $f_{ccw}$ at each deflection measurement are measured to calculate an experimental value of $c$. 
+	
 \section{Results}
 	\label{sec:Results}
 
@@ -164,9 +271,8 @@
 			
 			\centering
 			
-			\begin{tabular}{c c c c c}
-				\hline
-				Trial ID & \begin{tabular}[c]{@{}c@{}}CW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CW Speed \\ (rev/s) ($\pm5$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Speed \\ (rev/s) ($\pm5$)\end{tabular} \\ \hline
+			\begin{tabular}{c|c c c c}
+				Trial ID & \begin{tabular}[c]{@{}c@{}}CW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CW Speed \\ (Hz) ($\pm5$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Speed \\ (Hz) ($\pm5$)\end{tabular} \\ \hline
 				11       & 10.17                                                          & 1503                                                        & 9.27                                                            & -1460                                                        \\
 				12       & 10.19                                                          & 1505                                                        & 9.27                                                            & -1464                                                        \\
 				13       & 10.18                                                          & 1510                                                        & 9.28                                                            & -1461                                                        \\ \hline
@@ -176,7 +282,7 @@
 				31       & 12.00                                                          & 1508                                                        & 11.12                                                           & -1465                                                        \\
 				32       & 12.00                                                          & 1505                                                        & 11.08                                                           & -1456                                                        \\
 				33       & 12.00                                                          & 1507                                                        & 11.12                                                           & -1468                                                        \\
-				34       & 12.10                                                          & 1510                                                        & 11.12                                                           & -1466  \\ \hline                                                     
+				34       & 12.10                                                          & 1510                                                        & 11.12                                                           & -1466  \\                                                  
 			\end{tabular}
 			\caption{\textbf{Laser deflection data taken during three separate sessions. Positive rotation speeds correspond to clockwise rotation of the rotating mirror, and negative speeds correspond to counterclockwise speeds.}}
 			\label{tab:rawmeasure}
@@ -203,12 +309,12 @@
 	% distance measurement data
 	\begin{table}[]
 		\centering
-		\begin{tabular}{c c c c }
-			\hline
+		\begin{tabular}{c|c c c }
+			
 			& \begin{tabular}[c]{@{}c@{}}A(m)\\ ($\pm$0.005m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}B(m)\\ ($\pm$0.005m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}D (m)\\ ($\pm$0.01m)\end{tabular} \\ \hline
 			Set 1 & 0.26                                                       & 0.481                                                      & 6.65                                                       \\
 			Set 2 & 0.26                                                       & 0.481                                                      & 6.65                                                       \\
-			Set 3 & 0.326                                                      & 0.45                                                       & 6.63      \\ \hline                                                
+			Set 3 & 0.326                                                      & 0.45                                                       & 6.63      \\                                              
 		\end{tabular}
 		\caption{\textbf{Measurements of the lengths $A$, $B$, and $D$.}}
 		\label{tab:distances}
@@ -222,8 +328,8 @@
 	% deflection data
 	\begin{table}[t]
 		\centering
-		\begin{tabular}{c c}
-			\hline
+		\begin{tabular}{c|c}
+			
 			Trial ID & \begin{tabular}[c]{@{}c@{}}Deflection \\ (mm)\end{tabular}  \\ \hline
 			11       & 0.90       \\
 			12       & 0.92       \\
@@ -251,8 +357,8 @@
 	% mean measurements data
 	\begin{table*}[t]
 		\centering
-		\begin{tabular}{c c c c}
-			\hline
+		\begin{tabular}{c|c c c}
+			
 		    Data Set	& \begin{tabular}[c]{@{}c@{}}Measurement Mean, CW\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Measurement Mean, CCW\\ (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Mean Deflection\\ (mm)\end{tabular} \\ \hline
 			Set 1 & 10.18                                                               & 9.27                                                                 & 0.91                  \\
 			Set 2 & 10.18                                                               & 9.32                                                                 & 0.86                                                   \\
@@ -269,9 +375,9 @@
 	% average rotation speed data
 	\begin{table*}[t]
 		\centering
-		\begin{tabular}{c c c c}
-			\hline
-			 Data Set & \begin{tabular}[c]{@{}l@{}}Mean CW Rotation Speed \\ (Rev/s)($\pm$5)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mean CCW Rotation Speed \\ (Rev/s)($\pm$5)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mean Deflection Frequency \\ (Rev/s)($\pm$10)\end{tabular} \\ \hline
+		\begin{tabular}{c|c c c}
+			
+			 Data Set & \begin{tabular}[c]{@{}c@{}}Mean CW Rotation Speed \\ (Hz)($\pm$5)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Mean CCW Rotation Speed \\ (Hz)($\pm$5)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Mean Deflection Frequency \\ (Hz)($\pm$10)\end{tabular} \\ \hline
 			Set 1 & 1506                                                                            & -1461                                                                             & 2967                                                                               \\
 			Set 2 & 1505                                                                            & -1462                                                                             & 2967                                                                               \\
 			Set 3 & 1508                                                                            & -1464                                                                             & 2971  \\                                                                      
@@ -280,7 +386,7 @@
 		\label{tab:averagerotf}
 	\end{table*}
 	
-	The speed of light $c$ for each set was calculated using the mean deflections $s'_{cw}-s'_{ccw}$, the rotation speed difference $f_{cw} + f_{ccw}$, the distances $A$, $B$, and $D$, and the equation described in Methods and Procedures and restated in below as Equation \ref{eq:speedoflight_calcs}.
+	The speed of light $c$ for each set was calculated using the mean deflections $s'_{cw}-s'_{ccw}$, the rotation speed difference $f_{cw} + f_{ccw}$, the distances $A$, $B$, and $D$, and Equation (\ref{eq:SpeedofLightCalc1}) derived in Section \ref{sec:Methods} and restated below as Equation (\ref{eq:speedoflight_calcs}).
 	
 	\begin{equation} \label{eq:speedoflight_calcs}
 	c = \frac{ 8\pi AD^2 (f_{cw} + f_{ccw})}
@@ -292,7 +398,7 @@
 	% speed of light
 	\begin{table*}[!ht]
 		\centering
-		\begin{tabular}{c c c c} \hline
+		\begin{tabular}{c|c c c}
 			Data Set  & \begin{tabular}[c]{@{}c@{}}$c$ \\ ($m/s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Random Uncertainty \\ ($\pm m/s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Systematic Uncertainty \\ ($\pm m/s$)\end{tabular} \\ \hline
 			Set 1 & $1.33*10^{8}$                                           & TODO	& TODO                                                             \\
 			Set 2 & $1.39*10^8$                                           & TODO	& TODO                                                             \\
