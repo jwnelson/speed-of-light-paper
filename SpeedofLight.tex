@@ -150,7 +150,7 @@
 	\label{sec:Methods}
 	\subsection{Method Description}
 		Our measurements were made using the PASCO OS-9261 Speed of Light Apparatus Kit by PASCO Scientific.
-		The kit was provided all the necessary parts shown in Figure \ref{fig:LabEquip}.
+		The kit included the components shown in Figure \ref{fig:LabEquip}.
 		\begin{figure}[!ht]
 			\centering
 			\includegraphics[width=0.49\textwidth]{Images/PASCO_Equipment.png}
@@ -161,15 +161,14 @@
 		We then joined the two benches together using Bench Couplers with leveling screws that were set at an equal height.  
 		The Rotating Mirror Assembly was then placed on the Optics Bench so that the edge of the rotating mirror was aligned with the 17cm mark of the Optics Bench ruler.
 		
-		Before rotating $M_r$ electronically, we had to manually align MR with a flat spherical mirror until the laser beam reflected directly back into the center of the $M_r$. 
-		First, Lens 1 ($L_1$) was mounted on a Component Holder and placed at the $93.0 cm$ mark of the Optics Bench. 
-		Initially, $L_1$ had unfocused the laser beam covering an area of about an inch on the interface of the rotating mirror.  
-		Due to this error, the lab manual instructed to adjust the magnetic Component Holder of L1 until the beam was refocused at the center of the rotating mirror. 
-		Once refocusing $L_1$, Lens 2 ($L_2$) followed a similar procedure in that it had to be placed on the Optics Bench (specifically at the $62.2 cm$ mark) and also readjusted until the resulting beam was refocused on $M_r$.  
-		After finding the sharpest point, the Measuring Microscope was placed aligned with the $82.0 cm$ mark on the Optics Bench.  
-		We then moved the beamsplitter adjustment lever on the microscope in a 45-degree downward facing orientation with respect to the incident laser beam in order to observe the image of the reflected beam later on in the experiment. 
-		Finally, the lab manual suggested to place the fixed mirror ($M_f$) at least 8 m from $M_r$, however due to the limited space in the laboratory, we placed the fixed mirror only $6.65 m$ from the rotating mirror at a 12-degree angle with respect to the rotating mirror. 
-		At this stage, the apparatus will look similar to Figure \ref{fig:EquipConfig}.
+		First, Lens 1 ($L_1$) was mounted on a Component Holder and placed at the $93.0 cm$ mark of the Optics Bench, then adjusted slightly along the bench until it focused the laser onto the center of $M_r$. 
+		Lens 2 ($L_2$) was between $L_1$ and $M_r$ then placed near the $62.2 cm$ mark on the optics bench and also adjusted until the beam was focused on $M_r$.  
+		The beam splitter and measuring microscope were then placed between $L_1$ and $L_2$ at $82.0 cm$ on the Optics Bench.  
+		The beamsplitter adjustment lever on the microscope was positioned in the 45-degree downward orientation with respect to the incident laser beam so as to reflect the returning beam reflected by the $M_r$ upwards into the measuring microscope.
+		
+		The fixed spherical mirror $M_f$ was then placed $6.65m$ from $M_r$ at an angle of $\sim12^{\circ}$ from the path of the beam.
+		The instruction manual provided by PASCO \cite{lee_instruction_????} recommended placing the fixed mirror at least $8m$ from the rotating mirror, however the space available in our lab limited us to less than $7m$.
+		The optics bench configuration at this point is shown in Figure \ref{fig:EquipConfig}.
 		\begin{figure}[!ht]
 			\centering
 			\includegraphics[width=0.49\textwidth]{Images/PASCO_EquipmentAlignment.png}
@@ -177,21 +176,21 @@
 			\label{fig:EquipConfig}
 		\end{figure}
 		
-		After setting up the Optics Bench, we had to locate the image point by manually rotating $M_r$ until the reflected beam intersected the fixed mirror.  
-		After finding the point of intersection, the beam had to be refocused by sliding the Component Holder of $L_2$ back and forth.  
-		Also, a piece of white paper placed in front of $M_f$ in order to clearly see the sharpest virtual image as $L_2$ was adjusted.
+		After setup of the optics bench is complete, we rotated $M_r$ until the reflected beam intersected the fixed mirror.
+		Alignment screws on $M_f$ were then used to reflect the beam back onto $M_r$.
+		The beam was then refocused by slightly adjusting the position of $L_2$ on the optics bench.  
 		
-		Once there was a clear image, alignment screws on $M_f$ were used to ensure that the reflected image from $M_f$ landed squarely on the mirror of $M_r$.
-		Finally, two polarizers were initially 90-degrees out of phase and placed on the Optics Bench in front $L_1$.
-		These polarizers were specifically used for eye protection purposes since the bright laser had a high intensity.  
-		Therefore, the polarizers were slowly aligned until the observer found a desired intensity of light when peering through the microscope.
+		Finally, two polarizers were placed on the optics bench between the laser and $L_1$ to control the intensity of the laser and prevent eye damage when looking through the microscope.
 		
-		With the apparatus properly setup, a small image point from an interference pattern appeared when rotating $M_r$ electronically.  
-		The image point was used to determine the speed of light by measuring the displacement of the point as angular velocity of $M_r$ changed.
+		When the optics bench and mirrors are configured correctly, the beam will be reflected from $M_r$ to $M_f$, back to $M_r$, and then into the microscope such that a single point of light is visible in the microscope amidst a background of interference patterns from stray reflections in the optics.
+
+		The position of this point of light was measured using a micrometer which controlled the microscope.
+		Accurate measurements of the beam deflection at varying angular speeds of $M_r$ could then be made by positioning the microscope crosshairs over the light beam and reading the micrometer value.
 		
+		Each measurement of beam deflection began by measuring the image point location with $M_r$ rotating at $1,500Hz$ in the clockwise direction.
 		The $M_r$ rotation was placed in the clockwise rotation and was adjusted and displayed using was then dial on the rotating mirror assembly. 
-		The micrometer on the microscope was used to measure the displacement of the laser in the microscope as the angular velocity of $M_r$ was changed.  
-		After measuring the deflection at $1500Hz$ in the clockwise direction, the mirror rotation was reversed to $1500Hz$ in the counterclockwise direction and a new deflection measurement was taken.
+		The motion of $M_r$ was then reversed, and a second measurement was made at $1,500Hz$ in the counterclockwise direction.
+		The total beam deflection was taken as the difference between these two measurements.
 			
 	\subsection{Derivation of the Speed of Light Equation}
 	\label{subsec:Derivation}
@@ -533,7 +532,7 @@
 		
 		The uncertainty of the rotating mirror's velocity is found by adding the uncertainty of the velocity measurements in each direction, clockwise and counterclockwise, in quadrature:
 		\begin{equation}
-			\delta (f_{cw} + f_{ccw} = \sqrt{(f_{cw})^2 + (f_{ccw})^2}) 
+			\delta \left(f_{cw} + f_{ccw}\right) = \sqrt{(f_{cw})^2 + (f_{ccw})^2}
 		\end{equation}
 		\begin{equation*}
 			= \sqrt{(5Hz)^2 + (5Hz)^2}
@@ -634,7 +633,7 @@
 		 
 		
 		\subsubsection{Total Error} \label{subsubsec:TotalError}
-		Although leaving the random and systematic uncertainty in $c_m$ separate gives better insight into how each error source contributes to the overall uncertainty, we can combine them into a single measure of total uncertainty for simplicity.
+		Although leaving the random and systematic uncertainties in $c_m$ separate gives better insight into how each error source contributes to the overall uncertainty, we can combine them into a single measure of total uncertainty for simplicity.
 		
 		\begin{table*}[!ht]
 			\centering
@@ -667,17 +666,18 @@
 		\end{equation}
 		
 	\subsection{Discussion}
-		One assumption made in section 2.2 when deriving the equation for $c_m$ is that light travels in air at the same speed as in a vacuum. 
+		One assumption made in section 2.2 when deriving the equation for $c_m$ is that the laser light travels at the speed of light in a vacuum. 
 		Of course, our measurements were not made in a vacuum.
 		The refractive index of air is so slightly above unity, however, that the difference in light's speed in a vacuum and in the atmosphere is on the order of $100 km/s$, which is much less than our margins of uncertainty and, therefore, not measurable using this technique.
 		Thus, this assumption is valid for these measurements.
 		
 		The importance of maximizing the distance between mirrors to minimize fractional uncertainty was previously mentioned in section \ref{subsubsec:SystematicError}.
 		We also investigated the effect changing the distance $D$ from $M_r$ to $M_f$ has on the intensity of the laser light at the microscope.
-		Mirror $M_f$ was moved to roughly one half and one quarter of the experimental value $D$ of $6.65m$, and the corresponding intensity at each distance was observed in the microscope. Although no empirical measure of intensity was made, the intensity at $\frac{1}{2}D$ was observed to be roughly one-quarter the intensity at $\frac{1}{4}D$, and the intensity at the original distance $D$ was observed to be approximately one-quarter the intensity at $\frac{1}{2}D$.
+		
+		Mirror $M_f$ was moved to roughly one half and one quarter of the experimental value $D$ of $6.65m$, and the corresponding intensity at each distance was observed in the microscope. Although no empirical measure of light intensity was made, the intensity at $\frac{1}{2}D$ was observed to be roughly one-quarter the intensity at $\frac{1}{4}D$, and the intensity at the original distance $D$ was observed to be approximately one-quarter the intensity at $\frac{1}{2}D$.
 		
 		This supports the common inverse-square decrease in intensity for light propagating in three-dimensional space.
-		We thus concluded that the intensity of the laser was proportional to the inverse of $D^2$:
+		We thus concluded that the intensity of the laser in the microscope was proportional to the inverse of $D^2$:
 		
 		\begin{equation}
 			I_{laser} \propto \frac{1}{D^2}
@@ -685,16 +685,17 @@
 		
 		Thus there is a trade-off between minimizing systematic uncertainty and laser brightness at the microscope.
 		Having a long baseline distance $D$ will minimize uncertainty, but this will also greatly reduce the brightness of the laser at the point of measurement.
-		Finding the distance $D$ at whichh the laser intensity is still observable in the microscope but uncertainty is minimized is critical.
+		Finding the distance $D$ at which the laser intensity is still observable in the microscope but uncertainty is minimized is critical.
 		We believe the distance $D$ could be increased from our experimental value of $6.65m$ in future measurements, as the laser at this distance was still bright enough such that the polarizers had to be used to artificially reduce the intensity while taking measurements.
 		
 		Another consideration in our measurement is the shape of the fixed mirror $M_f$. 
 		$M_f$ was a concave mirror with a radius of curvature of $13.5m$. 
-		For spherical mirrors, focal length is equal to half the radius of curvature. 
+		For spherical mirrors, the focal length is equal to half the radius of curvature. 
 		Thus the focal length of $M_f$ is $6.75m$ for this particular mirror. 
-		Notice that the experimental length $D$ very nearly the focal length of the mirror.
+		Notice that the experimental length $D$ is nearly the focal length of the mirror.
 		This is significant because light transmitted from $M_r$ to $M_f$ will be reflected by $M_f$ and focused back onto $M_r$, keeping the laser beam in focus and reducing the uncertainty in $\Delta s'$, as well as slightly reducing the intensity loss of the laser over the distance $D$.
 		
+		On the other hand, a simple plane mirror with infinite focal length would not refocus the beam image onto $M_r$, and the beam would gradually lose focus and intensity between $M_f$ and $M_r$.
 \section{Conclusion}
 	\label{sec:Conclusion}
 	The objective of this experiment was to measure the speed of light using the Fizeau-Foucault method to within 10\%.
