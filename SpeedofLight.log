@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  18 OCT 2016 19:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  18 OCT 2016 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -243,7 +243,7 @@ Underfull \hbox (badness 1968) in paragraph at lines 118--121
 \OT1/cmr/m/n/10 ing a base-line of 600m, ob-tain-ing a re-sult of
  []
 
-[2] <Images/FoucaultMethodDiagram.png, id=18, 1100.11pt x 455.7025pt>
+[2] <Images/FoucaultMethodDiagram.png, id=17, 1100.11pt x 455.7025pt>
 File: Images/FoucaultMethodDiagram.png Graphic file (type png)
 
 <use Images/FoucaultMethodDiagram.png>
@@ -253,7 +253,7 @@ Package pdftex.def Info: Images/FoucaultMethodDiagram.png used on input line 13
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 135.
 
-<Images/PASCO_Equipment.png, id=19, 958.58125pt x 644.4075pt>
+<Images/PASCO_Equipment.png, id=18, 958.58125pt x 644.4075pt>
 File: Images/PASCO_Equipment.png Graphic file (type png)
 
 <use Images/PASCO_Equipment.png>
@@ -303,10 +303,7 @@ iagram.png>]
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 314.
 
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
+[6] [7]
 Underfull \hbox (badness 1005) in paragraph at lines 488--489
 \OT1/cmr/m/n/10 adding them in quadra-ture, al-though eval-u-at-ing
  []
@@ -323,7 +320,7 @@ Missing character: There is no ¸ in font cmti10!
 Here is how much of TeX's memory you used:
  3292 strings out of 493304
  49840 string characters out of 6139870
- 113170 words of memory out of 5000000
+ 114170 words of memory out of 5000000
  6716 multiletter control sequences out of 15000+600000
  10284 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -344,7 +341,7 @@ ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb>
-Output written on SpeedofLight.pdf (11 pages, 588492 bytes).
+Output written on SpeedofLight.pdf (11 pages, 587937 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
