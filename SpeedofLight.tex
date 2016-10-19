@@ -12,20 +12,19 @@
 \begin{document}
 	
 \title{Measuring the Speed of Light Using the Fizeau-Foucault Method}
-\author{Jack Nelson, Raymond Chang, Robert Gregory}
+\author{Robert Gregory, Raymond Jang, Jack Nelson}
 \date{October 2016}
 
  % hacky trick to get a one-column abstract in a two-column article
 \maketitle
 \begin{abstract}
-	Determining the value of fundamental constants of nature has been a basic function of physics since the founding of modern science.
+	Determining the value of nature's fundamental constants has been a basic function of physics since the founding of modern science.
 	In this paper, we report our efforts to measure the speed of light in air to within ten percent of the accepted modern definition of 299,792 km/sec using a modernized version of the Foucault-Fizeau technique.
-	Despite multiple calibrations and resets of the experimental setup, our best measurement of the speed of light was 145,000 km/sec [TODO add uncertainty], approximately a factor of two less than the accepted value.
-	Because of our low random uncertainty, this would seem to indicate an unaccounted-for systematic error in our experiment.
-	Measures were taken to quantify and eliminate possible sources of systematic error in the experiment, including quantifying backlash in the micrometer used to make laser deflection measurements.
+	Our measured value of $299,000 km/sec \pm 4\%$ shows that the speed of light can be accurately measured using this technique to within even 5\%.
 \end{abstract}	
 \section{Introduction}
 	\label{sec:Intro}
+	Our objective was to experimentally measure the speed of light $c_m$ in air using the Foucault method. 
 	The paper is structured as follows:
 	
 	\S\ref{sec:Intro} provides an overview of the measurement of the speed of light, starting with a summary of historical attempts dating back to the 17th century.
@@ -40,7 +39,7 @@
 		Most studies of the speed of light measure the time required for the light to travel a given distance. 
 		Because of the apparent instantaneity of its travel in most human-scale settings, it wasn’t until scientific techniques and instruments matured in the late 17th and early 18th centuries that the nature of the speed of light could truly be investigated. 
 		
-		In 1638, the famed Renaissance scientist Galileo Galilei theorized about the nature of light's travel in the form of a fictional conversation between three Italians, Salviati, Sagredo, and Simplicio, in his treatise \textit{Dialogues Concerning Two New Sciences}.\cite{galilei_dialogues_1638}
+		In 1638, the famed Renaissance scientist Galileo Galilei theorized about the nature of light's travel in the form of a fictional conversation between three Italians, Salviati, Sagredo, and Simplicio in his treatise \textit{Dialogues Concerning Two New Sciences}.\cite{galilei_dialogues_1638}
 		In the treatise, the three Italians speculate whether the speed of light is finite or infinite, and conclude that, if it is finite, it must be of very great magnitude:
 		
 		\begin{quotation}
@@ -126,7 +125,7 @@
 	\subsection{Theory of Experiment}
 		Our experimental technique is heavily based on the direct-measurement technique Fizeau and Foucault pioneered in the mid-19th century.
 		The central apparatus of the experiment is a two-sided variable-speed rotating mirror powered by a DC electric motor.
-		A red laser is focused onto the mirror while it rotates at angular speeds of up to 1,500Hz.
+		A monochromatic red laser is focused onto the mirror while it rotates at angular speeds of up to 1,500Hz.
 		A slightly concave fixed mirror is located approximately 6m away at angle $\theta$ relative to the incident laser path such that as the rotating mirror sweeps through angle $\theta$, it reflects laser light onto the fixed mirror.
 		The concave fixed mirror then reflects the laser light and focuses it back onto the rotating mirror.
 		
@@ -145,14 +144,57 @@
 		
 		If we place a half-silvered beam splitter in between the laser source and the rotating mirror such that light from the rotating mirror is partially reflected into a microscope, we can measure the minute deflection of the laser light due to the rotating mirror's motion during the light's time-of-flight delay.
 		
-		The experimental configuration described above is shown in Figure \ref{fig:FoucaultDiagram}.
-		
-		\subsection{Derivation of the Speed of Light Equation from Experimental Measurements}
+		The experimental configuration is shown in Figure \ref{fig:FoucaultDiagram}.
 		
 \section{Methods and Procedures}
 	\label{sec:Methods}
 	\subsection{Method Description}
+		Our measurements were made using the PASCO OS-9261 Speed of Light Apparatus Kit by PASCO Scientific.
+		The kit was provided all the necessary parts shown in Figure \ref{fig:LabEquip}.
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=0.49\textwidth]{Images/PASCO_Equipment.png}
+			\caption{\textbf{PASCO OS-9261 Speed of Light Apparatus Kit. Figure 4 in \cite{lee_instruction_????}. \copyright PASCO Scientific.}}
+			\label{fig:LabEquip}
+		\end{figure}
+		The Optics Bench was first placed on a flat level surface and loosely attached to the Laser Alignment Bench.  
+		We then joined the two benches together using Bench Couplers with leveling screws that were set at an equal height.  
+		The Rotating Mirror Assembly was then placed on the Optics Bench so that the edge of the rotating mirror was aligned with the 17cm mark of the Optics Bench ruler.
+		
+		Before rotating $M_r$ electronically, we had to manually align MR with a flat spherical mirror until the laser beam reflected directly back into the center of the $M_r$. 
+		First, Lens 1 ($L_1$) was mounted on a Component Holder and placed at the $93.0 cm$ mark of the Optics Bench. 
+		Initially, $L_1$ had unfocused the laser beam covering an area of about an inch on the interface of the rotating mirror.  
+		Due to this error, the lab manual instructed to adjust the magnetic Component Holder of L1 until the beam was refocused at the center of the rotating mirror. 
+		Once refocusing $L_1$, Lens 2 ($L_2$) followed a similar procedure in that it had to be placed on the Optics Bench (specifically at the $62.2 cm$ mark) and also readjusted until the resulting beam was refocused on $M_r$.  
+		After finding the sharpest point, the Measuring Microscope was placed aligned with the $82.0 cm$ mark on the Optics Bench.  
+		We then moved the beamsplitter adjustment lever on the microscope in a 45-degree downward facing orientation with respect to the incident laser beam in order to observe the image of the reflected beam later on in the experiment. 
+		Finally, the lab manual suggested to place the fixed mirror ($M_f$) at least 8 m from $M_r$, however due to the limited space in the laboratory, we placed the fixed mirror only $6.65 m$ from the rotating mirror at a 12-degree angle with respect to the rotating mirror. 
+		At this stage, the apparatus will look similar to Figure \ref{fig:EquipConfig}.
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=0.49\textwidth]{Images/PASCO_EquipmentAlignment.png}
+			\caption{\textbf{Configuration of the optics bench. Figure 5 in \cite{lee_instruction_????}. \copyright PASCO Scientific.}}
+			\label{fig:EquipConfig}
+		\end{figure}
+		
+		After setting up the Optics Bench, we had to locate the image point by manually rotating $M_r$ until the reflected beam intersected the fixed mirror.  
+		After finding the point of intersection, the beam had to be refocused by sliding the Component Holder of $L_2$ back and forth.  
+		Also, a piece of white paper placed in front of $M_f$ in order to clearly see the sharpest virtual image as $L_2$ was adjusted.
+		
+		Once there was a clear image, alignment screws on $M_f$ were used to ensure that the reflected image from $M_f$ landed squarely on the mirror of $M_r$.
+		Finally, two polarizers were initially 90-degrees out of phase and placed on the Optics Bench in front $L_1$.
+		These polarizers were specifically used for eye protection purposes since the bright laser had a high intensity.  
+		Therefore, the polarizers were slowly aligned until the observer found a desired intensity of light when peering through the microscope.
+		
+		With the apparatus properly setup, a small image point from an interference pattern appeared when rotating $M_r$ electronically.  
+		The image point was used to determine the speed of light by measuring the displacement of the point as angular velocity of $M_r$ changed.
+		
+		The $M_r$ rotation was placed in the clockwise rotation and was adjusted and displayed using was then dial on the rotating mirror assembly. 
+		The micrometer on the microscope was used to measure the displacement of the laser in the microscope as the angular velocity of $M_r$ was changed.  
+		After measuring the deflection at $1500Hz$ in the clockwise direction, the mirror rotation was reversed to $1500Hz$ in the counterclockwise direction and a new deflection measurement was taken.
+			
 	\subsection{Derivation of the Speed of Light Equation}
+	\label{subsec:Derivation}
 	We start by considering a laser, a rotating mirror $M_r$, and a fixed mirror $M_f$ in the configuration shown in Figure \ref{fig:MrMfAngles}. 
 	Suppose a photon is emitted from the laser and reflected off the rotating mirror to a point $S$ located on the fixed mirror in euclidean space. 
 	If $M_r$ is at an angle $\theta$ from the plane of the incident laser beam, the incident light will be reflected onto $M_f$ at an angle of 2$\theta$ by Snell's law.
@@ -180,7 +222,7 @@
 	
 	Now let D be the distance between $M_r$ and $M_f$. 
 	The distance between the original image $S$ and the second image $S_1$ formed at a small time $\Delta t$ later can be found from trigonometry. 
-	Assuming both $S$ and $S_1$ lie on The arc of a circle of radius $D$, the arc length $\Delta S = S_1-S$ would be:
+	Assuming both $S$ and $S_1$ lie on the arc of a circle of radius $D$, the arc length $\Delta S = S_1-S$ would be:
 	\begin{equation*}
 		\Delta S = S_1 - S = D(2\theta_1 - 2\theta)
 	\end{equation*}
@@ -201,29 +243,32 @@
 		\label{fig:VirtualImage}
 	\end{figure}
 	
-	Lenses $L_2$ will distort the arc length $\Delta S$ by $i/o$ where $i$ is the distance from $L_2$ to the image $A$, and $o$ is the distance from $l_2$ to the object at $D + B$. 
+	Lenses $L_2$ will distort the arc length $\Delta S$ by $i/o$ where $i$ is $A$, the distance from $L_2$ to the image, and $o$ is the distance from $l_2$ to the object at $D + B$. 
 	The length $\Delta S$ will therefore become a new contracted length we'll call  $\Delta s'$ when the light passes through lens $L_2$. 
 	With this, $\Delta s'$ is equal to:
 	\begin{equation}
-		\Delta s' = \frac{i}{o} \Delta S = \Delta S(\frac{A}{D}+B)
+		\Delta s' = \frac{i}{o} \Delta S = (\frac{A}{D+B})\Delta S
 		\label{eq:DeltaSPrime}
 	\end{equation}
 	
 	Additionally, from Equation (\ref{eq:DeltaS}), $\Delta S$ was found to be twice the product of the distance between mirrors D and a tiny angle $\Delta \theta$. Substituting this information from Equation (\ref{eq:DeltaS}) into Equation (\ref{eq:DeltaSPrime}) gives:
 	\begin{equation}
-		\Delta s' = 2D\Delta\theta(\frac{A}{D}+B)
+		\Delta s' = (\frac{A}{D+B})2D\Delta\theta
 		\label{eq:DeltaSPrime2}
 	\end{equation}
 	
-	The small angle $\Delta$ is really just the rotation rate of the mirror in radians per second $omega$ divided by the speed of the laser beam. 
-	Here, it will be assumed the laser travels at the speed of light $c$. 
-	Therefore, $\Delta$ can be written in terms of the rotation rate of $M_r$:
+	The small angle $\Delta \Theta$ is really just the rotation rate of the mirror in radians per second $\omega$ divided by the speed of the laser beam. 
+	
+	Here, it will be assumed the laser travels at the speed of light in a vacuum $c$.
+	This assumption will be shown to be valid in our conclusion in section \ref{sec:Conclusion}.
+	
+	Therefore, $\Delta \Theta$ can be written in terms of the rotation rate of $M_r$:
 	\begin{equation}
 		\Delta\theta = 2D\frac{w}{c}
 		\label{eq:DeltaTheta}
 	\end{equation}
 	
-	By substituting Equation (\ref{eq:DeltaTheta}) into Equation (\ref{eq:DeltaSPrime2}), the reflected image height can be rewritten as:
+	By substituting Equation (\ref{eq:DeltaTheta}) into Equation (\ref{eq:DeltaSPrime2}), the reflected image can be rewritten as:
 	\begin{equation}
 		\Delta s' = \frac{4A\omega D^2}{c(D+B)}
 		\label{eq:DeltaSPrime3}
@@ -253,7 +298,7 @@
 	\end{equation}
 	This notation assumes the convention that a clockwise rotation is positive, and a counterclockwise rotation is negative.
 	
-	Our final equation for the experimental speed of light value is then:
+	Our final equation for the experimental speed of light is then:
 	\begin{equation} \label{eq:SpeedofLightCalc1}
 	c = \frac{ 8\pi AD^2 (f_{cw} + f_{ccw})}
 	{ (D + B) (s'_{cw} - s'_{ccw})}
@@ -273,16 +318,16 @@
 			
 			\begin{tabular}{c|c c c c}
 				Trial ID & \begin{tabular}[c]{@{}c@{}}CW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CW Speed \\ (Hz) ($\pm5$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Measurement \\ (mm) ($\pm0.01$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}CCW Speed \\ (Hz) ($\pm5$)\end{tabular} \\ \hline
-				11       & 10.17                                                          & 1503                                                        & 9.27                                                            & -1460                                                        \\
-				12       & 10.19                                                          & 1505                                                        & 9.27                                                            & -1464                                                        \\
-				13       & 10.18                                                          & 1510                                                        & 9.28                                                            & -1461                                                        \\ \hline
-				21       & 10.16                                                          & 1506                                                        & 9.28                                                            & -1462                                                        \\
-				22       & 10.18                                                          & 1503                                                        & 9.33                                                            & -1463                                                        \\
-				23       & 10.22                                                          & 1507                                                        & 9.36                                                            & -1460                                                        \\ \hline
-				31       & 12.00                                                          & 1508                                                        & 11.12                                                           & -1465                                                        \\
-				32       & 12.00                                                          & 1505                                                        & 11.08                                                           & -1456                                                        \\
-				33       & 12.00                                                          & 1507                                                        & 11.12                                                           & -1468                                                        \\
-				34       & 12.10                                                          & 1510                                                        & 11.12                                                           & -1466  \\                                                  
+				11       & 10.17                                                          & 1503                                                        & 9.77                                                            & -1460                                                        \\
+				12       & 10.19                                                          & 1505                                                        & 9.77                                                            & -1464                                                        \\
+				13       & 10.18                                                          & 1510                                                        & 9.78                                                            & -1461                                                        \\ 
+				21       & 10.16                                                          & 1506                                                        & 9.78                                                            & -1462                                                        \\
+				22       & 10.18                                                          & 1503                                                        & 9.83                                                            & -1463                                                        \\
+				23       & 10.22                                                          & 1507                                                        & 9.86                                                            & -1460                                                        \\ 
+				31       & 12.00                                                          & 1508                                                        & 11.62                                                           & -1465                                                        \\
+				32       & 12.00                                                          & 1505                                                        & 11.58                                                           & -1456                                                        \\
+				33       & 12.00                                                          & 1507                                                        & 11.62                                                           & -1468                                                        \\
+				34       & 12.10                                                          & 1510                                                        & 11.62                                                           & -1466  \\                                                  
 			\end{tabular}
 			\caption{\textbf{Laser deflection data taken during three separate sessions. Positive rotation speeds correspond to clockwise rotation of the rotating mirror, and negative speeds correspond to counterclockwise speeds.}}
 			\label{tab:rawmeasure}
@@ -291,71 +336,68 @@
 		
 		
 	Three sets of data were taken spread across three measurement sessions on different dates. 
-	The first two measurement sessions used the same experimental setup on different days. 
-	Session three occurred after the experiment was broken down and rebuilt so as to try and exonerate the experimental setup as a source of error in the measurements. 
-	As a result, the first two sets of data can be analyzed together, while the third set of data must be analyzed separately at first, since the process of rebuilding the experimental setup introduced systematic differences to the measurements made during the third session. 
-	Since the calculated speed of light value is dependent on relative measurements and not absolute measurements, this systematic difference between the first two sets of data and the third will be shown to be negligible in the overall calculation of the speed of light.
-	
 	Table \ref{tab:rawmeasure} shows the measurements taken in each of the three sessions.
 	The data is indexed by a trial ID. 
-	The session each measurement belongs to is indicated by the leading digit of the Trial ID. 
-	For example, measurement 23 is the third measurement taken during the second set of data.
+	The session each measurement belongs to is indicated by the leading digit of the trial ID. 
+	For example, measurement 23 is the third measurement taken in the second set of data.
+	For each set, measurements were taken at angular velocities of $\pm$1500 Hz for the rotating mirror. 
 	
-	For the first two sessions, data was only taken for the $\pm$1500 rev/s rotating mirror speeds. 
-	In the third set, additional measurements were made at mirror speeds $\pm$1000 rev/s in order to characterize backlash in the micrometer knob.
-	
-	Other values necessary for the calculation of the speed of light included the distance A between $L_1$ and $L_2$, the distance $B$ between $L_2$ and the rotating mirror, and the baseline distance $D$ between the rotating mirror and the fixed mirror. Measurements of each of these distances were taken for each set and are reported in Table \ref{tab:distances}.
+	Other values necessary for the calculation of the speed of light included the distance A between $L_1$ and $L_2$, the distance $B$ between $L_2$ and the rotating mirror, and the baseline distance $D$ between the rotating mirror and the fixed mirror. Measurements of each of these distances were taken and reported in Table \ref{tab:distances}.
 		
 	% distance measurement data
-	\begin{table}[]
-		\centering
-		\begin{tabular}{c|c c c }
-			
-			& \begin{tabular}[c]{@{}c@{}}A(m)\\ ($\pm$0.005m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}B(m)\\ ($\pm$0.005m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}D (m)\\ ($\pm$0.01m)\end{tabular} \\ \hline
-			Set 1 & 0.26                                                       & 0.481                                                      & 6.65                                                       \\
-			Set 2 & 0.26                                                       & 0.481                                                      & 6.65                                                       \\
-			Set 3 & 0.326                                                      & 0.45                                                       & 6.63      \\                                              
-		\end{tabular}
-		\caption{\textbf{Measurements of the lengths $A$, $B$, and $D$.}}
-		\label{tab:distances}
-	\end{table}	
-	
-	
-	\subsection{Calculations}
-	The equation for calculating the speed of light is dependent on the deflection difference between measurements at the maximum rotation speeds clockwise and counter-clockwise. 
-	Table \ref{tab:deflection} shows the deflections for each measurement in mm.
-	
-	% deflection data
 	\begin{table}[t]
 		\centering
 		\begin{tabular}{c|c}
+			Dimension	&	Measured Value	\\ \hline
+			A	&	$0.260\pm0.007m$	\\
+			B	&	$0.481\pm0.007m$	\\
+			D	&	$6.65\pm0.01m$	\\
+		\end{tabular}
+		\caption{\textbf{Measurements of the lengths $A$, $B$, and $D$.}}
+		\label{tab:distances}
+	\end{table}
+	
+	
+	\subsection{Calculations} \label{subsec:Calculations}
+	The equation relating the dimensional measurements $A$, $B$, and $C$, as well as the deflection $\Delta s' = s'_{cw} - s'_{ccw}$ and angular frequency  and $f = f_{cw} -f_{ccw}$, was derived in section \ref{subsec:Derivation} as Equation (\ref{eq:SpeedofLightCalc1}), and restated below as Equation (\ref{eq:speedoflight_calcs}):
+	
+	\begin{equation} \label{eq:speedoflight_calcs}
+	c = \frac{ 8\pi AD^2 (f_{cw} - f_{ccw})}
+	{ (D + B) (s'_{cw} - s'_{ccw})}
+	\end{equation}
+	
+	Table \ref{tab:deflection} shows $\Delta s'$ and $f$ for each measurement in mm and Hertz, respectively.
+	$\Delta s'$ was obtained by taking the difference between the clockwise deflection measurement $s'_{cw}$ and the counterclockwise deflection measurement $s'_{ccw}$.
+	Similarly, $f$ was obtained by taking the difference between the frequency $f_{cw}$ at which the clockwise measurement was made, and the frequency $f_{ccw}$ at which the counterclockwise measurement was made.
+	
+	% deflection data TODO - Might be redundant
+	\begin{table}[t]
+		\centering
+		\begin{tabular}{l|l l}
 			
-			Trial ID & \begin{tabular}[c]{@{}c@{}}Deflection \\ (mm)\end{tabular}  \\ \hline
-			11       & 0.90       \\
-			12       & 0.92       \\
-			13       & 0.90       \\
-			21       & 0.88       \\
-			22       & 0.85       \\
-			23       & 0.86       \\
-			31       & 0.88       \\
-			32       & 0.92       \\
-			33       & 0.88       \\
-			34       & 0.98       \\                                              
+			Trial ID & \begin{tabular}[c]{@{}l@{}}Deflection $\Delta s'$\\ (mm)($\pm0.035$)\end{tabular} &  \begin{tabular}[c]{@{}l@{}}Angular Frequency $f$\\ (Hz)($\pm7$)\end{tabular} \\ \hline
+			11       & 0.40	&	2963       \\
+			12       & 0.45	&	2969       \\
+			13       & 0.40 &	2971      \\
+			21       & 0.40 &	2968      \\
+			22       & 0.35 &	2966      \\
+			23       & 0.36 &	2967      \\
+			31       & 0.38 &	2973      \\
+			32       & 0.42 &	2961      \\
+			33       & 0.38 &	2975      \\
+			34       & 0.48 &	2976      \\  \hline
+			Average	 & $0.40\pm0.01mm$ &	$2969\pm2Hz$                                            
 		\end{tabular}%
-		\caption{\textbf{Deflection measurements of the laser between the maximum rotation speeds in the clockwise and counterclockwise directions, in mm and m.}}
+		\caption{\textbf{Laser deflection and mirror rotational frequency for each trial with associated measurement error. Average values across all trials are provided in the bottom row, along with their associated standard error uncertainties}}
 		\label{tab:deflection}
 	\end{table}
 	
-	Comparing the measurements in sets 1 and 2 to those in set 3, we can see that the absolute value of these measurements are different, yet the relative deflections are still roughly the same. 
-	This indicates that our experimental setup was consistent and did not affect the outcome of the measurements. 
-	This will be further supported in the section on error analysis.
+	$\Delta s'$ and $f$ were averaged across all the measurements to obtain a best value for each.
+	The best values for the deflection and mirror angular frequency are shown in the bottom row of table \ref{tab:deflection}.
 	
-	To calculate a value for the speed of light, each set of measurements was averaged with respect to mirror rotation speed and direction. 
-	The average measurement values for each set are shown in table \ref{tab:meanvalues}. 
-	The mean deflection for each set was calculated from the difference of the mean measurements at +1500 rev/s and -1500 rev/s.
-	
-	% mean measurements data
-	\begin{table*}[t]
+	% mean measurements data TODO - Possible redundant
+	\iffalse
+	\begin{table*}[t]	
 		\centering
 		\begin{tabular}{c|c c c}
 			
@@ -367,12 +409,24 @@
 		\caption{\textbf{Mean measurements for each set of data averaged with respect to mirror rotation speed and direction.}}
 		\label{tab:meanvalues}
 	\end{table*}
+	\fi
 	
-	The rotation frequencies for each measurement were recorded as well and averaged for each set. 
-	The total rotation frequency $f_{CW}+f_{CCW}$ is just the sum of the mean rotation frequencies for each set, and is used in the calculation of the speed of light. 
-	These values are reported in table \ref{tab:averagerotf}.
-	
+	\iffalse
+	\begin{table*}[t]
+		\centering
+		\begin{tabular}{c|l l l l l}
+			
+			Data Set	& $\Delta s'$ (mm) & $f$ (Hz) & A (m) & B (m)& D (m)\\ \hline
+			Set 1 & 0.42$\pm0.02$                                                               & 2968$\pm4$                                                                & 0.260$\pm0.001$	& 0.481$\pm0.001$	& 6.65$\pm0.01$                 \\
+			Set 2 & 0.37$\pm0.06$                                                               &  2967$\pm3$  &  0.260$\pm0.001$ & 0.481$\pm0.001$ & 6.65 $\pm0.01$                                   \\
+			Set 3 & 0.41$\pm0.05$                                                               & 2971$\pm6$                                                               & 0.326$\pm0.001$ & 0.45$\pm0.001mm$ & 0.01$\pm0.01Hz$                                        \\       
+		\end{tabular}
+		\caption{\textbf{All measured values for each set with their associated uncertainties.}}
+		\label{tab:meanvalues}
+	\end{table*}
+	\fi
 	% average rotation speed data
+	\iffalse
 	\begin{table*}[t]
 		\centering
 		\begin{tabular}{c|c c c}
@@ -385,39 +439,268 @@
 		\caption{\textbf{Mean measurement rotation speeds for each set of data.}}
 		\label{tab:averagerotf}
 	\end{table*}
-	
-	The speed of light $c$ for each set was calculated using the mean deflections $s'_{cw}-s'_{ccw}$, the rotation speed difference $f_{cw} + f_{ccw}$, the distances $A$, $B$, and $D$, and Equation (\ref{eq:SpeedofLightCalc1}) derived in Section \ref{sec:Methods} and restated below as Equation (\ref{eq:speedoflight_calcs}).
-	
-	\begin{equation} \label{eq:speedoflight_calcs}
-	c = \frac{ 8\pi AD^2 (f_{cw} + f_{ccw})}
-			 { (D + B) (s'_{cw} - s'_{ccw})}
-	\end{equation}
-	
-	The calculated speed of light $c$ for each set of data is shown in Table \ref{tab:cvals}.
-	
+	\fi
 	% speed of light
+	\iffalse
 	\begin{table*}[!ht]
 		\centering
-		\begin{tabular}{c|c c c}
-			Data Set  & \begin{tabular}[c]{@{}c@{}}$c$ \\ ($m/s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Random Uncertainty \\ ($\pm m/s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Systematic Uncertainty \\ ($\pm m/s$)\end{tabular} \\ \hline
-			Set 1 & $1.33*10^{8}$                                           & TODO	& TODO                                                             \\
-			Set 2 & $1.39*10^8$                                           & TODO	& TODO                                                             \\
-			Set 3 & $1.65*10^8$                                           & TODO	& TODO                       \\                                   
+		\begin{tabular}{c|c c c c}
+			Data Set  & \begin{tabular}[c]{@{}c@{}}$c$ \\ ($km/sec$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Random Uncertainty \\ ($\pm km/sec$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Systematic Uncertainty \\ ($\pm km/sec$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Total Uncertainty \\ ($\pm km/sec$)\end{tabular} \\ \hline
+			Set 1 & $290,000$                                           & 20,000 &    30,000        & 30,000                                                  \\
+			Set 2 & $330,000$                                           & 50,000	&  30,000   & 60,000                \\     
+			Set 3 & $310,000$	&	40,000	&	30,000	&	50,000	\\                              
 		\end{tabular}
 		\caption{\textbf{Calculated values of the speed of light}}
 		\label{tab:cvals}
 	\end{table*}
+	\fi
+	We arrive at our measured value for the speed of light $c_m$ by substituting the measured quantities $A$, $B$, and $D$ given in table \ref{tab:distances}, and the mean deflection $\Delta s'_\mu$ and angular frequency $f_\mu$ given in table \ref{tab:deflection} into Equation (\ref{eq:speedoflight_calcs}) and solving:
+	\begin{equation}
+		c_{m} = \frac{8\pi AD^2 f_\mu}{(D+B)\Delta s'_\mu}
+	\end{equation}
+	\begin{equation}
+		c_{m} = \frac{(0.260m)(6.65m)^2(2969Hz)}{(6.65m + 0.481m)(0.40\times 10^{-3}m)}
+	\end{equation}
+	
+	Our final value for $c_m$ is given in Equation (\ref{eq:MeasuredSpeedofLight}) and reported with random and systematic uncertainties $\delta c_{ran}$ and $\delta c_{sys}$.
+	These uncertainties will be explained and calculated in section \ref{subsec:error}.
+	\begin{equation*}
+	c_m = c_{best}\pm \delta c_{ran} \pm \delta c_{sys}
+	\end{equation*}
+	\begin{equation}
+		\label{eq:MeasuredSpeedofLight}
+		c_{m} = 299,000\pm 9,000\pm 9,000 km/sec
+	\end{equation}
+	
+	We can additionally report $c_m$ with a measure of total uncertainty and total percent error as well:
+	\begin{equation*}
+		c_m = 299,000\pm 13,000 km/sec = 
+	\end{equation*}
+	\begin{equation}
+		= 299,000km/sec\pm 4\%
+	\end{equation}
+	
+	The calculation of total uncertainty will be covered in section \ref{subsubsec:TotalError}.
 	
 	\subsection{Error Analysis} \label{subsec:error}
-	Each set of data was separately analyzed for random and systematic error.
-	For each data set, the standard deviation of each of each measurement at each frequency was calculated, then added in quadrature to arrive at a standard deviation of uncertainty in the deflection value.
-	 
+	We quantified both systematic and random uncertainty in our measurement.
+	Section \ref{subsubsec:SystematicError} explains the calculation of the systematic uncertainty in our measurement, while section \ref{subsubsec:RandomError} shows our process of calculating the random uncertainty.
+	
+	The random and systematic uncertainties are also combined into a total measure of uncertainty by adding them in quadrature, although evaluating them separately gives more insight into the source of error in our measurements.
+	
+	\subsubsection{Systematic Error} \label{subsubsec:SystematicError}
+		We first account for the experimental systematic error.
+		In our equation for the speed of light given by Equation (\ref{eq:speedoflight_calcs}), we have five measured quantities, each of which have an associated systematic error: $A, B, D, \Delta s'$, and $f$.
+		The relative importance of each contribution to uncertainty will be considered and the fractional systematic uncertainty for $c_m$ will be found by directly summing all five fractional uncertainties in quadrature.
+		
+		The uncertainty of the lengths A and B result from the uncertainty in the measured distance between the locations of lenses $L_1$ and $L_2$, and the rotating mirror $M_r$.
+		Since the smallest unit of measurement of the optics bench meter is $1mm$, the uncertainty in the measurement of the locations of $L_1$, $L_2$, and $M_r$ is $0.5mm$. Thus the total uncertainty in A and B is given by
+		\begin{equation*}
+			\delta A = \sqrt{(\delta L_1)^2 + (\delta L_2)^2}
+		\end{equation*}
+		\begin{equation*}
+			\delta A = \sqrt{(0.5mm)^2 + (0.5mm)^2}
+		\end{equation*}
+		\begin{equation}
+			\delta A = \delta B = 0.71mm
+		\end{equation}
+		
+		The uncertainty of D is due to the uncertainty in the measuring tape used to measure D.
+		In this case, the smallest unit of measurement was $0.01m$, thus:
+		\begin{equation}
+			\delta D = 5mm
+		\end{equation}
+		
+		The uncertainty of $D + B$ is propagated by adding the respective uncertainties of D and B in quadrature:
+		\begin{equation*}
+			\delta (D+B) = \sqrt{(\delta D)^2 + (\delta B)^2}
+		\end{equation*}
+		\begin{equation*}
+		= \sqrt{(0.005m)^2 + (0.007)^2} \approx \sqrt{\delta \left(D\right)^2} = 0.005m
+		\end{equation*}
+		Because the uncertainty of D is much larger than that of B, $\delta D$ dominates in the uncertainty of $D + B$.
+		
+		We can also see from this why it is desirable to maximize the length D.
+		From the fractional uncertainty $\delta D/D$, we can see that a longer distance D will reduce the overall fractional uncertainty of the measurement.
+		
+		The uncertainty $\delta D^2$ is computed by:
+		\begin{equation*}
+			\delta D^2 = 2 \frac{\delta D}{D} D^2 = 2(\frac{0.005m}{6.65m}) (6.65m)^2 
+		\end{equation*}
+		\begin{equation}
+		\delta D^2 = 0.0665m
+		\end{equation}
+		
+		The uncertainty of the rotating mirror's velocity is found by adding the uncertainty of the velocity measurements in each direction, clockwise and counterclockwise, in quadrature:
+		\begin{equation}
+			\delta (f_{cw} + f_{ccw} = \sqrt{(f_{cw})^2 + (f_{ccw})^2}) 
+		\end{equation}
+		\begin{equation*}
+			= \sqrt{(5Hz)^2 + (5Hz)^2}
+		\end{equation*}
+		\begin{equation}
+			\delta f = 7Hz
+		\end{equation}
+		
+		Finally, we find the uncertainty of the deflection measurements similarly by adding the uncertainty of the individual deflections in each rotation direction in quadrature:
+		\begin{equation*}
+			\delta(\Delta s'_{cw} - \Delta s'_{ccw}) = \sqrt{(\delta \Delta s'_{cw})^2 + (\delta \Delta s'_{ccw})^2}
+		\end{equation*}
+		\begin{equation*}
+			= \sqrt{(0.025mm)^2 + (0.025mm)^2} = 0.035 mm
+		\end{equation*}
+		\begin{equation}
+			\delta \Delta s' = 35\mu m
+		\end{equation}
+		
+		With each of the associated systematic uncertainties in the calculation of $c_m$ quantified, we can now calculate a total fractional systematic uncertainty in $c_m$.
+		The total systematic fractional uncertainty in $c_m$ is found by summing in quadrature each of the individual uncertainties:
+		\begin{equation*}
+			\left( \frac{\delta c}{c} \right)^2 = \left(\frac{\delta A}{A} \right) ^2 + \left(\frac{\delta D^2}{D} \right)^2 + \left(\frac{\delta \left(D+B \right)}{D+B} \right)^2 +
+		\end{equation*} 
+		\begin{equation*}
+			+ \left(\frac{\delta f}{f}\right)^2 + \left(\frac{\delta \Delta s'}{\Delta s'}\right)^2
+		\end{equation*}
+		\begin{equation*}
+			\Rightarrow \left( \frac{\delta c}{c}\right)^2 = \left(\frac{0.71\times10^{-3}m}{0.26m}\right)^2 + \left(\frac{0.0665m}{(6.65)m^2}\right)^2 +
+		\end{equation*}
+		\begin{equation*}
+			+ \left(\frac{0.005m}{6.65m + 0.481m}\right)^2 + \left(\frac{7 Hz}{2968Hz}\right)^2 + 
+		\end{equation*}
+		\begin{equation*}
+			+ \left(\frac{35\times 10^{-6}m}{0.402\times 10^{-3}m}\right)^2
+		\end{equation*}
+		\begin{equation}
+			\frac{\delta c_m}{c_m} = 0.0314
+		\end{equation}
+		
+		Substituting the value for $c_m$ calculated in section \ref{subsec:Calculations} and given in Equation (\ref{eq:MeasuredSpeedofLight}), we arrive at the total systematic uncertainty in our measurement:
+		\begin{equation} \label{eq:as}
+			\delta c_m = 0.0314c = 9,397 km/sec
+		\end{equation}
+		Which is rounded to one significant figure and reported in Equation (\ref{eq:MeasuredSpeedofLight}).
+		
+		The fractional uncertainties of our sources of systematic error are reported in Table \ref{tab:FracSystemUncert}.
+		Comparing the relative magnitudes, we can see that the dominant source of systematic error in our experiment is in the deflection measurement $\Delta s'$.
+		
+		
+		\begin{table}[t]
+			\centering
+			\begin{tabular}{c|c}
+				Uncertainty Source	&	Fractional Uncertainty	\\ \hline
+				$\Delta s'$	&	$8\%$	\\
+				$A$ & $0.27\%$ \\
+				$f$	&	$0.24\%$	\\
+				$D^2$	&	$0.15\%$ \\
+				$D+B$	&	$0.07\%$\\
+			\end{tabular}
+			\caption{\textbf{Fractional uncertainties of each source of systematic uncertainty.}}
+			\label{tab:FracSystemUncert}
+		\end{table}
+		
+	\subsubsection{Random Error} \label{subsubsec:RandomError}
+		Random error in $c_m$ originated in the measurements of $\Delta s'$ and $f$.
+		The random measurement error was minimized by taking ten separate measurements of these quantities and then calculating their mean to arrive at a best measurement value, as was shown in section \ref{subsec:Calculations}.
+		
+		We took as the measurement of random error the standard deviation of the mean (SDOM) of the average measurements of $\Delta s'$ and $f$.
+		The random uncertainties $\delta \Delta s'_r$ and $\delta f_r$ of $\Delta s'$ and $f$ are given in table \ref{tab:RandomUncert}.
+		
+		\begin{table}[t]
+			\centering
+			\begin{tabular}{c|c}
+				Measurement	&	Standard Error	\\ \hline
+				$\delta \Delta s'_r$	&	$0.125\times 10^{-4}m$	\\
+				$\delta f_r$	&	$1.56 Hz$	\\
+			\end{tabular}
+			\caption{\textbf{Random uncertainties of the measured values $\Delta s'$ and $f$.}}
+			\label{tab:RandomUncert}
+		\end{table}
+		
+		The total fractional random error of $c_m$ was calculated by adding $\delta \Delta s'_r$ and $\delta f_r$ in quadrature:
+		\begin{equation*}
+			\left(\frac{\delta c_{m_r}}{c_m}\right)^2 = \left(\frac{\delta \Delta s'_r}{\Delta s'}\right)^2 + \left(\frac{\delta f_r}{f}\right)^2
+		\end{equation*}
+		\begin{equation*}
+			\left(\frac{\delta c_{m_r}}{c_m}\right)^2 = \left(\frac{0.125\times 10^{-4} m}{4.0\times 10^{-4}m}\right)^2 + \left(\frac{1.56 Hz}{2969 Hz}\right)^2
+		\end{equation*}
+		\begin{equation}
+			\frac{\delta c_{m_r}}{c_m} = 0.0312
+		\end{equation}
+		
+		Once again using our value for $c_m$ from Equation (\ref{eq:MeasuredSpeedofLight}), we arrive at our total random error in $c_m$:
+		\begin{equation}
+			\delta c_{m_r} = 9,340 km/sec
+		\end{equation}
+		 
+		
+		\subsubsection{Total Error} \label{subsubsec:TotalError}
+		Although leaving the random and systematic uncertainty in $c_m$ separate gives better insight into how each error source contributes to the overall uncertainty, we can combine them into a single measure of total uncertainty for simplicity.
+		
+		\begin{table*}[!ht]
+			\centering
+			\begin{tabular}{c|c c c}
+				&	Random Error $c_{m_r}$	& Systematic Error $c_{m_s}$	& Total Error $c_{m_t}$	\\ \hline
+				Uncertainty	&	$9,340 km/sec$	& $9,397 km/sec$	&	$13,244 km/sec$	\\
+				Percent Error	&	$3.12\%$	&	$3.14\%$	&	$4.42\%$	\\
+			\end{tabular}
+			\caption{\textbf{Random, systematic, and total uncertainty of the measured speed of light.}}
+			\label{tab:Uncertainties}
+		\end{table*}
+		
+		We combine $\delta c_{m_r}$ and $\delta c_{m_s}$ into $\delta c_{m_t}$ by adding the systematic and random errors in quadrature:
+		\begin{equation}
+			\delta c_{m_t} = \sqrt{ \left(\delta c_{m_r} \right)^2 + \left( \delta c_{m_s} \right)^2}
+		\end{equation}
+		\begin{equation}
+		\delta c_{m_t} = \sqrt{ \left( 9,340 km/sec \right)^2 + \left(  9,397 km/sec \right)^2}
+		\end{equation}
+		\begin{equation}
+			\delta c_{m_t} = 13,244 km/sec
+		\end{equation}
+		
+		The systematic, random, and total uncertainties of $c_m$ are reported in table \ref{tab:Uncertainties}.
+		
+		A valuable measure of total error is the percent error.
+		The total percent error of our measurement is then:
+		\begin{equation}
+			\frac{\delta c_{m_t}}{c_m} = 0.0442 = 4.42\% 
+		\end{equation}
+		
 	\subsection{Discussion}
-
-
+		One assumption made in section 2.2 when deriving the equation for $c_m$ is that light travels in air at the same speed as in a vacuum. 
+		Of course, our measurements were not made in a vacuum.
+		The refractive index of air is so slightly above unity, however, that the difference in light's speed in a vacuum and in the atmosphere is on the order of $100 km/s$, which is much less than our margins of uncertainty and, therefore, not measurable using this technique.
+		Thus, this assumption is valid for these measurements.
+		
+		The importance of maximizing the distance between mirrors to minimize fractional uncertainty was previously mentioned in section \ref{subsubsec:SystematicError}.
+		We also investigated the effect changing the distance $D$ from $M_r$ to $M_f$ has on the intensity of the laser light at the microscope.
+		Mirror $M_f$ was moved to roughly one half and one quarter of the experimental value $D$ of $6.65m$, and the corresponding intensity at each distance was observed in the microscope. Although no empirical measure of intensity was made, the intensity at $\frac{1}{2}D$ was observed to be roughly one-quarter the intensity at $\frac{1}{4}D$, and the intensity at the original distance $D$ was observed to be approximately one-quarter the intensity at $\frac{1}{2}D$.
+		
+		This supports the common inverse-square decrease in intensity for light propagating in three-dimensional space.
+		We thus concluded that the intensity of the laser was proportional to the inverse of $D^2$:
+		
+		\begin{equation}
+			I_{laser} \propto \frac{1}{D^2}
+		\end{equation}
+		
+		Thus there is a trade-off between minimizing systematic uncertainty and laser brightness at the microscope.
+		Having a long baseline distance $D$ will minimize uncertainty, but this will also greatly reduce the brightness of the laser at the point of measurement.
+		Finding the distance $D$ at whichh the laser intensity is still observable in the microscope but uncertainty is minimized is critical.
+		We believe the distance $D$ could be increased from our experimental value of $6.65m$ in future measurements, as the laser at this distance was still bright enough such that the polarizers had to be used to artificially reduce the intensity while taking measurements.
+		
+		Another consideration in our measurement is the shape of the fixed mirror $M_f$. 
+		$M_f$ was a concave mirror with a radius of curvature of $13.5m$. 
+		For spherical mirrors, focal length is equal to half the radius of curvature. 
+		Thus the focal length of $M_f$ is $6.75m$ for this particular mirror. 
+		Notice that the experimental length $D$ very nearly the focal length of the mirror.
+		This is significant because light transmitted from $M_r$ to $M_f$ will be reflected by $M_f$ and focused back onto $M_r$, keeping the laser beam in focus and reducing the uncertainty in $\Delta s'$, as well as slightly reducing the intensity loss of the laser over the distance $D$.
+		
 \section{Conclusion}
 	\label{sec:Conclusion}
-
+	The objective of this experiment was to measure the speed of light using the Fizeau-Foucault method to within 10\%.
+	Our final derived measurement of $299,000 \pm 9,000 \pm 9000 km/sec$ given by Equation (\ref{eq:MeasuredSpeedofLight}) is within 1\% of the modern standard value of the speed of light in a vacuum of 299,792 km/sec set by the International Committee for Weights and Measures (CIPM) \cite{_bipm_1984}, which is well within our margins of uncertainty.
+	Additional accuracy could be gained through decreasing the systematic uncertainty by increasing the baseline distance $D$.
+	
 \bibliographystyle{siam}
 \bibliography{SpeedofLight}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  16 OCT 2016 23:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  18 OCT 2016 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -217,120 +217,133 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (52.19531pt too wide) in paragraph at lines 97--108
+Overfull \hbox (52.19531pt too wide) in paragraph at lines 96--107
  [][] 
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 119--122
+Underfull \hbox (badness 1968) in paragraph at lines 118--121
 \OT1/cmr/m/n/10 ing a base-line of 600m, ob-tain-ing a re-sult of
  []
 
-[2] <Images/FoucaultMethodDiagram.png, id=16, 1100.11pt x 455.7025pt>
+[2] <Images/FoucaultMethodDiagram.png, id=18, 1100.11pt x 455.7025pt>
 File: Images/FoucaultMethodDiagram.png Graphic file (type png)
 
 <use Images/FoucaultMethodDiagram.png>
 Package pdftex.def Info: Images/FoucaultMethodDiagram.png used on input line 13
-5.
+4.
 (pdftex.def)             Requested size: 229.81258pt x 95.19273pt.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 136.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 135.
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
-\OT1/cmr/bx/n/12 Equa-tion from Ex-per-i-men-tal
- []
+<Images/PASCO_Equipment.png, id=19, 958.58125pt x 644.4075pt>
+File: Images/PASCO_Equipment.png Graphic file (type png)
 
+<use Images/PASCO_Equipment.png>
+Package pdftex.def Info: Images/PASCO_Equipment.png used on input line 156.
+(pdftex.def)             Requested size: 229.81258pt x 154.48396pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./Images/FoucaultMethodDiagram.png>]
-<Images/MrMfAngles.png, id=24, 925.4575pt x 405.515pt>
+<Images/PASCO_EquipmentAlignment.png, id=25, 974.64125pt x 415.5525pt>
+File: Images/PASCO_EquipmentAlignment.png Graphic file (type png)
+
+<use Images/PASCO_EquipmentAlignment.png>
+Package pdftex.def Info: Images/PASCO_EquipmentAlignment.png used on input line
+ 175.
+(pdftex.def)             Requested size: 229.81258pt x 97.98457pt.
+ [4 <./Images/PASCO_Equipment.png> <./Images/PASCO_EquipmentAlignment.png>]
+<Images/MrMfAngles.png, id=30, 925.4575pt x 405.515pt>
 File: Images/MrMfAngles.png Graphic file (type png)
 
 <use Images/MrMfAngles.png>
-Package pdftex.def Info: Images/MrMfAngles.png used on input line 162.
+Package pdftex.def Info: Images/MrMfAngles.png used on input line 204.
 (pdftex.def)             Requested size: 229.81258pt x 100.69785pt.
 
-<Images/MrMfAngles2.png, id=25, 756.8275pt x 294.09875pt>
+<Images/MrMfAngles2.png, id=31, 756.8275pt x 294.09875pt>
 File: Images/MrMfAngles2.png Graphic file (type png)
 
 <use Images/MrMfAngles2.png>
-Package pdftex.def Info: Images/MrMfAngles2.png used on input line 176.
+Package pdftex.def Info: Images/MrMfAngles2.png used on input line 218.
 (pdftex.def)             Requested size: 229.81258pt x 89.30283pt.
 
-<Images/VirtualImageDiagram.png, id=26, 932.48375pt x 586.19pt>
+<Images/VirtualImageDiagram.png, id=32, 932.48375pt x 586.19pt>
 File: Images/VirtualImageDiagram.png Graphic file (type png)
 
 <use Images/VirtualImageDiagram.png>
-Package pdftex.def Info: Images/VirtualImageDiagram.png used on input line 199.
+Package pdftex.def Info: Images/VirtualImageDiagram.png used on input line 241.
 
 (pdftex.def)             Requested size: 229.81258pt x 144.46306pt.
 
-Overfull \hbox (3.09036pt too wide) in paragraph at lines 199--200
+Overfull \hbox (3.09036pt too wide) in paragraph at lines 241--242
  [][]\OT1/cmr/m/n/10 ] 
  []
 
-[4 <./Images/MrMfAngles.png> <./Images/MrMfAngles2.png> <./Images/VirtualImageD
-iagram.png>]
+[5 <./Images/MrMfAngles.png> <./Images/MrMfAngles2.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 270.
+               Default added (so using `tbp') on input line 315.
 
-[5]
+[6 <./Images/VirtualImageDiagram.png>] [7]
+Underfull \hbox (badness 1005) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 adding them in quadra-ture, al-though eval-u-at-ing
+ []
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 310.
+[8]
+Underfull \hbox (badness 1194) in paragraph at lines 597--597
+[]\OT1/cmr/bx/n/10 Table 5: |Frac-tional un-cer-tain-ties of each
+ []
 
-
-Underfull \vbox (badness 1755) has occurred while \output is active []
-
- [6]
-(./SpeedofLight.bbl
+[9] [10] (./SpeedofLight.bbl
 Missing character: There is no Ã in font cmti10!
 Missing character: There is no ¸ in font cmti10!
- [7]) [8
-
-] (./SpeedofLight.aux) ) 
+) [11] (./SpeedofLight.aux) ) 
 Here is how much of TeX's memory you used:
- 3273 strings out of 493304
- 49321 string characters out of 6139870
- 114077 words of memory out of 5000000
- 6699 multiletter control sequences out of 15000+600000
+ 3292 strings out of 493304
+ 49840 string characters out of 6139870
+ 114170 words of memory out of 5000000
+ 6716 multiletter control sequences out of 15000+600000
  10284 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,14n,38p,396b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti10.pfb>
-Output written on SpeedofLight.pdf (8 pages, 425005 bytes).
+ 37i,15n,38p,484b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxt
+i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on SpeedofLight.pdf (11 pages, 588462 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
